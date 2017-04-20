@@ -11,7 +11,7 @@ bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
 });
 
-event.reply({ type: 'text', text: 'Hello, world' });
+bot.reply({event.replyToken, 'Hello, world' });
 
 const app = express();
 const linebotParser = bot.parser();
