@@ -9,10 +9,11 @@ var bot = linebot({
 
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
+  event.reply('Hello');
 });
 
 //bot.reply(event.replyToken, 'Hello, world' );
-event.reply('Hello');
+//event.reply('Hello');
 
 const app = express();
 const linebotParser = bot.parser();
