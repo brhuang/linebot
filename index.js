@@ -12,6 +12,7 @@ bot.on('message', function(event) {
 });
 
 //bot.reply(event.replyToken, 'Hello, world' );
+event.reply('Hello');
 
 const app = express();
 const linebotParser = bot.parser();
